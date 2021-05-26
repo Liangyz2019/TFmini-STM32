@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"distance\startup_stm32f103xe.o"
+"distance\main.o"
+"distance\gpio.o"
+"distance\usart.o"
+"distance\stm32f1xx_it.o"
+"distance\stm32f1xx_hal_msp.o"
+"distance\stm32f1xx_hal_gpio_ex.o"
+"distance\stm32f1xx_hal_tim.o"
+"distance\stm32f1xx_hal_tim_ex.o"
+"distance\stm32f1xx_hal_uart.o"
+"distance\stm32f1xx_hal.o"
+"distance\stm32f1xx_hal_rcc.o"
+"distance\stm32f1xx_hal_rcc_ex.o"
+"distance\stm32f1xx_hal_gpio.o"
+"distance\stm32f1xx_hal_dma.o"
+"distance\stm32f1xx_hal_cortex.o"
+"distance\stm32f1xx_hal_pwr.o"
+"distance\stm32f1xx_hal_flash.o"
+"distance\stm32f1xx_hal_flash_ex.o"
+"distance\stm32f1xx_hal_exti.o"
+"distance\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Distance\Distance.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Distance.map" -o Distance\Distance.axf
